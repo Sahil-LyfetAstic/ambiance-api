@@ -1,0 +1,21 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "src/(.*)": "<rootDir>/../src/$1",
+    "@core/mongo/(.*)": "<rootDir>/../libs/mongo/src/$1",
+    "@core/mongo": "<rootDir>/../libs/mongo/src",
+    "^@core/email(|/.*)$": "<rootDir>/libs/email/src/$1",
+    "^@core/recaptcha(|/.*)$": "<rootDir>/libs/recaptcha/src/$1",
+    "^@core/twilio(|/.*)$": "<rootDir>/libs/twilio/src/$1"
+  }
+}
